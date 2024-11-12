@@ -94,17 +94,15 @@ const Shorten = () => {
               </Link>
             </code>
 
-            {/* "Copy" Button */}
-            <div className="flex justify-center w-full mt-4">
-              <button
-                onClick={copyToClipboard}
-                className="border-2 border-green-600 text-white py-1 px-6 rounded-md font-bold bg-transparent hover:bg-green-600 w-[20%]"
-              >
-                Copy
-              </button>
-            </div>
-          </div>
-        )}
+           {/* "Copy" Button */}
+<div className="flex justify-center w-full mt-4">
+  <button
+    onClick={copyToClipboard}
+    className="border-2 border-green-600 text-white py-1 px-6 rounded-md font-bold bg-transparent hover:bg-green-600 w-[20%] flex items-center justify-center"
+  >
+    Copy
+  </button>
+</div>
 
         {/* Footer with developer attribution */}
         <div className="absolute bottom-1 w-full flex justify-center">
