@@ -35,6 +35,14 @@ const Shorten = () => {
       .catch((error) => console.error(error));
   };
 
+  const copyToClipboard = () => {
+    if (generated) {
+      navigator.clipboard.writeText(generated)
+        .then(() => alert('Link copied to clipboard!'))
+        .catch((error) => console.error('Error copying link: ', error));
+    }
+  };
+
   return (
     <main
       className="min-h-screen bg-black flex items-center justify-center relative bg-cover bg-center"
@@ -85,6 +93,13 @@ const Shorten = () => {
                 {generated}
               </Link>
             </code>
+            {/* "Copy" Button */}
+            <button
+              onClick={copyToClipboard}
+              className="border-2 border-green-600 text-white py-2 px-4 rounded-md font-bold bg-transparent hover:bg-green-600 w-[20%] mt-4"
+            >
+              Copy Link
+            </button>
           </div>
         )}
 
