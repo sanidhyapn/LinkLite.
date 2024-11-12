@@ -8,7 +8,7 @@ const Navbar = () => {
       style={{ backgroundImage: "url('/green2.jpg')" }}
     >
       <div className="logo font-bold text-2xl">
-        <Link href="/">LinkLite.</Link>
+        <Link href="/">LinkLite.Trial</Link>
       </div>
     </nav>
   )
