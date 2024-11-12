@@ -94,15 +94,17 @@ const Shorten = () => {
               </Link>
             </code>
             {/* "Copy" Button */}
-            <button
-              onClick={copyToClipboard}
-              className="border-2 border-green-600 text-white py-1 px-6 rounded-md font-bold bg-transparent hover:bg-green-600 w-[15%] mt-4"
-            >
-              Copy 
-            </button>
-          </div>
-        )}
-
+           {/* "Copy" Button */}
+{generated && (
+  <div className="flex justify-center w-full mt-4">
+    <button
+      onClick={copyToClipboard}
+      className="border-2 border-green-600 text-white py-1 px-6 rounded-md font-bold bg-transparent hover:bg-green-600 w-[15%]"
+    >
+      Copy
+    </button>
+  </div>
+)}
         {/* Footer with developer attribution */}
         <div className="absolute bottom-1 w-full flex justify-center">
           <p className="text-center text-lg text-white">
