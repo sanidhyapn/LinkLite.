@@ -96,7 +96,7 @@ const Shorten = () => {
             {/* "Copy" Button */}
             <button
               onClick={copyToClipboard}
-              className="border-2 border-green-600 text-white py-2 px-4 rounded-md font-bold bg-transparent hover:bg-green-600 w-[20%] mt-4"
+              className="border-2 border-green-600 text-white py-2 px-4 rounded-md font-bold bg-transparent hover:bg-green-600 w-[10%] mt-4"
             >
               Copy Link
             </button>
