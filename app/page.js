@@ -56,7 +56,7 @@ export default function Home() {
               href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"  // Replace with your LinkedIn URL
               target="_blank"
               rel="noopener noreferrer"
-              className={`absolute left-6 top-0 transform -translate-y-3/4 text-1xl font-semibold text-white ${welcomeFont.className}`}
+              className="text-green-400 hover:text-green-600 transition-colors duration-200 "
             >
               sanidhyapn  
             </a>
